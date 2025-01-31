@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: sans-serif; 
+}
+
+body {
+    background: #dedede;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    box-shadow: 3px 3px 10px #b2b2b2;
+
+    h1 {
+        margin: 0px 0px 10px;
+    }
+
+    .currency {
+        display: flex;
+
+        select {
+            appearance: none;
+            outline: none;
+            border: 1px solid #b2b2b2;
+            padding: 3px;
+        }
+        
+        input[type=number] {
+            border: 1px solid #b2b2b2;
+            text-align: right;
+            width: 100%;
+            margin-left: 10px;
+        }
+    }
+
+    .ratesText {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .buttons {
+        display: flex;
+        margin: 20px 0 0px;
+        gap: 10px;
+
+        #swapBtn {
+            color: white;
+            background: green;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            padding: 5px;
+            width: 50%;
+        }
+        #swapBtn:hover {
+            background: darkgreen;
+        }
+        
+        #resetBtn {
+            color: white;
+            background: red;
+            border: none;
+            cursor: pointer;
+            outline: none;
+            padding: 5px;
+            width: 50%;
+        }
+        #resetBtn:hover {
+            background: darkred;
+        }
+    }
+}
+
